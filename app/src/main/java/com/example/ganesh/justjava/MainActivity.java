@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view){
         displayPrice(quantity * 5);
     }
-
     private void display(int number) {
         TextView quantityTextview = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextview.setText("" + number);
