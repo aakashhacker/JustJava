@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/coffee">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,9 +20,13 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:hint="@string/name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="#FAFAFA"
+            android:textColorHint="#FAFAFA"
+            android:textStyle="italic"/>
 
         <TextView
+            style="@style/CustomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -29,9 +34,9 @@
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:text="@string/toppings"
-            style="@style/CustomText"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
         <CheckBox
             android:id="@+id/whipped_cream_checkbox"
@@ -42,8 +47,9 @@
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:text="@string/whipped_cream"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textColor="#FAFAFA"
+            android:textSize="15sp"
+            android:textStyle="italic" />
 
         <CheckBox
             android:id="@+id/choclate_checkbox"
@@ -54,19 +60,21 @@
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:text="@string/choclate"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textColor="#FAFAFA"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
 
         <TextView
+            style="@style/CustomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:text="@string/quantity"
-            style="@style/CustomText"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,7 +91,8 @@
                 android:layout_weight="1"
                 android:onClick="increment"
                 android:text="@string/plus"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/quantity_text_view"
@@ -92,8 +101,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/zero"
-                android:textColor="@android:color/black"
-                android:textSize="50sp" />
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
 
             <Button
                 android:layout_width="0dp"
@@ -101,7 +111,8 @@
                 android:layout_weight="1"
                 android:onClick="decrement"
                 android:text="@string/minus"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <TextView
@@ -113,7 +124,8 @@
             android:text="@string/order_summary"
             android:textAllCaps="true"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/order_summary_text_view"
@@ -131,9 +143,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:onClick="submitOrder"
             android:paddingLeft="20dp"
             android:text="@string/order"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>
